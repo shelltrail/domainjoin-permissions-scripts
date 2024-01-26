@@ -2,6 +2,7 @@
 $computerDN = (Get-ADComputer -filter *).DistinguishedName # All computers
 $entity = "TEST\Domain Users"
 $guid = "3f78c3e5-f79a-46bd-a0b8-9d18116ddc79" # msDS-AllowedToActOnBehalfOfOtherIdentity
+#$guid = "5b47d60f-6090-40b2-9f37-2a4de88f3063" # msDS-KeyCredentialLink
 
 # Define the ACE properties
 $adRights = [System.DirectoryServices.ActiveDirectoryRights]::WriteProperty
