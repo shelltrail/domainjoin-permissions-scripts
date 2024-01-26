@@ -20,3 +20,4 @@ foreach($computer in $computerDn){
 	$acl.AddAccessRule($ace)
 	# Set the modified ACL back to the computer object
 	Set-ACL -Path "AD:$computer" -AclObject $acl
+}
